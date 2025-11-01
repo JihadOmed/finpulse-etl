@@ -10,7 +10,6 @@
   <a href="https://airflow.apache.org/"><img src="https://img.shields.io/badge/Apache%20Airflow-2.9.3-blue?logo=apacheairflow&logoColor=white"></a>
   <a href="https://spark.apache.org/"><img src="https://img.shields.io/badge/Apache%20Spark-3.5.2-orange?logo=apachespark&logoColor=white"></a>
   <a href="https://www.mysql.com/"><img src="https://img.shields.io/badge/MySQL-8.0-lightblue?logo=mysql&logoColor=white"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg"></a>
 </p>
 
 ---
