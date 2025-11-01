@@ -6,9 +6,7 @@ from scripts.utils import data_dir
 
 @pytest.fixture
 def sqlite_engine(tmp_path, monkeypatch):
-    """
-    Use SQLite in-memory DB to simulate MySQL during tests.
-    """
+
     db_path = tmp_path / "test.db"
     engine = create_engine(f"sqlite:///{db_path}")
 
@@ -49,3 +47,4 @@ def test_load_inserts_data(sqlite_engine, tmp_path):
     with sqlite_engine.connect() as conn:
         result = conn.execute("SELECT COUNT(*) FROM finance_prices").scalar()
         assert result == 2, "Data not inserted correctly"
+
