@@ -15,9 +15,7 @@ def spark():
 
 
 def test_transform_adds_columns(spark, tmp_path, monkeypatch):
-    """
-    Ensure transformation adds new calculated columns.
-    """
+
     # Prepare mock raw data
     data = [
         ("AAPL", "2025-01-01", 100, 101, 99, 100.5, 100.5, 1_000_000),
@@ -42,3 +40,4 @@ def test_transform_adds_columns(spark, tmp_path, monkeypatch):
     df_result = spark.read.parquet(curated_path)
     for col in ["return_1d", "moving_avg_7", "moving_avg_30"]:
         assert col in df_result.columns, f"{col} column missing"
+
