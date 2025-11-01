@@ -1,0 +1,7 @@
+{
+    "host": "mysql",
+    "port": 3306,
+    "user": "etl_user",
+    "password": "etl_pass",
+    "database": "finance_dw"
+}
