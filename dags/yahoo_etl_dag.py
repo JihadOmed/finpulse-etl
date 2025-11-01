@@ -8,7 +8,7 @@ from scripts.transform_spark import transform_data
 from scripts.load_mysql import load_data
 
 default_args = {
-    "owner": "jihad",
+    "owner": "name",
     "retries": 2,
     "retry_delay": timedelta(minutes=5),
 }
@@ -39,3 +39,4 @@ with DAG(
     )
 
     extract >> transform >> load
+
